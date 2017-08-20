@@ -1,0 +1,14 @@
+PATH
+  remote: .
+  specs:
+    cosmic_ruby_client (1.0.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cosmic_ruby_client!

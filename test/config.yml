@@ -1,0 +1,6 @@
+cosmic:
+  host:       '10.1.192.54'
+  port:       '8080'
+  admin_port: '8096'
+  api_key:    'j88bUHw6zqG9Ch1RygIsqrwb4vs3PTBM3g-H7mxuY-Lk51cMHxM2c8PyaQELYbvnLqJg1uDeWABKPiPLAgG03g'
+  secret_key: 'TdMoVDOHsWofNjpmh4BacktKbRPn8CnjtG6cQLJ6B2ACD1-NXL6fK__yg2d2IAHwm___ogwc7nY2fbr-55fVDQ'
