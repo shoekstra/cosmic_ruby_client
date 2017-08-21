@@ -1,4 +1,4 @@
-module CloudstackRubyClient
+module CosmicRubyClient
   module Api
     module SystemVm
       cmd_processor :start_system_vm,

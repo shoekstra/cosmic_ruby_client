@@ -1,4 +1,4 @@
-module CloudstackRubyClient
+module CosmicRubyClient
   module Api
     module AffinityGroup
       cmd_processor :list_affinity_groups,

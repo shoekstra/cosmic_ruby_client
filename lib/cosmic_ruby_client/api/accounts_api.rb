@@ -1,4 +1,4 @@
-module CloudstackRubyClient
+module CosmicRubyClient
   module Api
     module Domain
       cmd_processor :list_domains,

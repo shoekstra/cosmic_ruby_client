@@ -6,10 +6,10 @@ require 'cosmic_ruby_client'
 
 
 case ARGV.first when '-h', '--help', '--usage', '-?', 'help', nil
-  puts CloudstackRubyClient::Help
+  puts CosmicRubyClient::Help
   exit ARGV.first ? 0 : 1
 when '--version'
-  puts CloudstackRubyClient::Version
+  puts CosmicRubyClient::Version
   exit 0
 end
 
@@ -18,26 +18,26 @@ APIKEY    = ARGV[2]
 SECRETKEY = ARGV[3]
 URL       = "http://#{ARGV[0]}:#{ARGV[1]}/client/api/"
 
-comp = proc { |s| CloudstackRubyClient::Client.API_LIST.sort.grep(/^#{Regexp.escape(s)}/) }
+comp = proc { |s| CosmicRubyClient::Client.API_LIST.sort.grep(/^#{Regexp.escape(s)}/) }
 
 client = nil
 
 begin
-  client = CloudstackRubyClient::Client.new(URL, APIKEY, SECRETKEY, false)
+  client = CosmicRubyClient::Client.new(URL, APIKEY, SECRETKEY, false)
 rescue
-  puts "Error, cannot initiate the cloudStackRubyClient."
+  puts 'Error, cannot initiate the cloudStackRubyClient.'
   exit
 end
 
-puts "="*100
+puts '='*100
 puts "Connected to host : #{URL}"
 puts "APIKEY : #{APIKEY}"
 puts "SECRETKEY : #{SECRETKEY}"
-puts "="*100
+puts '='*100
 
-Readline.completion_append_character = " "
+Readline.completion_append_character = ' '
 Readline.completion_proc = comp
-Readline.completer_word_break_characters = ""
+Readline.completer_word_break_characters = ''
 
 stty_save = `stty -g`.chomp
 
@@ -55,12 +55,12 @@ begin
       end
     rescue ArgumentError => e
       puts "#{e.to_s}"
-    rescue CloudstackRubyClient::RequestError => e
+    rescue CosmicRubyClient::RequestError => e
       puts "Error #{e.response.code}: #{JSON.pretty_generate(e.json)}"
     rescue RuntimeError => e
-      puts "Oops! something bad happened. Please try again"
+      puts 'Oops! something bad happened. Please try again'
     rescue
-      puts "Sorry, command not supported"
+      puts 'Sorry, command not supported'
     end
   end
 rescue Interrupt => e

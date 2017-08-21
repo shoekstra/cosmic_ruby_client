@@ -1,4 +1,4 @@
-class CloudstackRubyClient::BaseClient
+class CosmicRubyClient::BaseClient
 
   def initialize(api_url, api_key, secret_key, use_ssl=nil, open_timeout=20)
     @api_url      = api_url

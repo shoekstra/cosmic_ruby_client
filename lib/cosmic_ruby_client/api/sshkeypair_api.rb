@@ -1,4 +1,4 @@
-module CloudstackRubyClient
+module CosmicRubyClient
   module Api
     module Ssh
       cmd_processor :create_ssh_key_pair,

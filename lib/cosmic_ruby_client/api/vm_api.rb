@@ -1,4 +1,4 @@
-module CloudstackRubyClient
+module CosmicRubyClient
   module Api
     module VirtualMachine
       cmd_processor :deploy_virtual_machine,

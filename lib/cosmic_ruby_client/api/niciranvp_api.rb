@@ -1,4 +1,4 @@
-module CloudstackRubyClient
+module CosmicRubyClient
   module Api
     module NiciraNvp
       cmd_processor :add_nicira_nvp_device,

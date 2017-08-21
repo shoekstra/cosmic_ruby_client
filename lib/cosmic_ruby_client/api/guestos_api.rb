@@ -1,4 +1,4 @@
-module CloudstackRubyClient
+module CosmicRubyClient
   module Api
     module GuestOs
       cmd_processor :list_os_types,

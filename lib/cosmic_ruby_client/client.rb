@@ -1,6 +1,6 @@
 require 'timeout'
 
-class CloudstackRubyClient::RequestError < RuntimeError
+class CosmicRubyClient::RequestError < RuntimeError
   attr_reader :response, :json
 
   def initialize(response, json)
@@ -9,13 +9,13 @@ class CloudstackRubyClient::RequestError < RuntimeError
   end
 end
 
-class CloudstackRubyClient::Client < CloudstackRubyClient::BaseClient
+class CosmicRubyClient::Client < CosmicRubyClient::BaseClient
 
   @@API_LIST = []
 
   ## Api command injection
-  CloudstackRubyClient::Api.constants.collect{|k| 
-    CloudstackRubyClient::Api.const_get(k)
+  CosmicRubyClient::Api.constants.collect{|k| 
+    CosmicRubyClient::Api.const_get(k)
   }.select {|k| k.is_a?(Module)}.each do |sub_module|
     include sub_module
   
@@ -26,7 +26,7 @@ class CloudstackRubyClient::Client < CloudstackRubyClient::BaseClient
     @@API_LIST
   end
 
-  ## CloudStack management server version
+  ## Cosmic management server version
   def version
     self.list_capabilities["capability"]["cosmicversion"]
   end
@@ -95,7 +95,7 @@ class CloudstackRubyClient::Client < CloudstackRubyClient::BaseClient
       
       raise RuntimeError, json['errorresponse']['errortext'] if response.code == "432"
 
-      raise CloudstackRubyClient::RequestError.new(response, json)
+      raise CosmicRubyClient::RequestError.new(response, json)
     end
     
     json[resp_title]

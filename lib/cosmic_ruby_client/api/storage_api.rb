@@ -1,4 +1,4 @@
-module CloudstackRubyClient
+module CosmicRubyClient
   module Api
     module StoragePool
       cmd_processor :list_storage_pools,

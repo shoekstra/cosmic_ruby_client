@@ -1,4 +1,4 @@
-module CloudstackRubyClient
+module CosmicRubyClient
   module Api
     module Firewall
       cmd_processor :list_port_forwarding_rules,

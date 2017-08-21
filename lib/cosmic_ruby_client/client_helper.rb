@@ -109,7 +109,7 @@ class Module
 
             raise RuntimeError, json['errorresponse']['errortext'] if response.code.to_s == "432"
 
-            raise CloudstackRubyClient::RequestError.new(response, json)
+            raise CosmicRubyClient::RequestError.new(response, json)
           end
 
           json[resp_title]

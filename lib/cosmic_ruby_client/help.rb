@@ -1,4 +1,4 @@
-module CloudstackRubyClient
+module CosmicRubyClient
   Help = %Q{
     Usage: $ bin/cosmic_ruby_client ${IPADDR}, ${PORT}, ${APIKEY}, ${SECRETKEY}
 

@@ -15,5 +15,5 @@ namespace :test do
 end
 
 desc 'Run tests'
-task :test => Rake::Task["test:unit"]
+task :test => Rake::Task['test:unit']
 task :default => :test

@@ -1,4 +1,4 @@
-module CloudstackRubyClient
+module CosmicRubyClient
   module Api
     module AsyncJob
       cmd_processor :list_async_jobs,

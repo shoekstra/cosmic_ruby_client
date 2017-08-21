@@ -1,4 +1,4 @@
-module CloudstackRubyClient
+module CosmicRubyClient
   module Api
     module NetworkOffering
       cmd_processor :create_network_offering,

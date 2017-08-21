@@ -1,4 +1,4 @@
-module CloudstackRubyClient
+module CosmicRubyClient
   module Api
     module Certificate
       cmd_processor :upload_custom_certificate

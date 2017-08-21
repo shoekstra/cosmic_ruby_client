@@ -1,4 +1,4 @@
-module CloudstackRubyClient
+module CosmicRubyClient
   module Api
     module BigSwitchVNS
       cmd_processor :add_big_switch_vns_device,

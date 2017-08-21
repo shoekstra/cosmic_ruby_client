@@ -1,4 +1,4 @@
-module CloudstackRubyClient
+module CosmicRubyClient
   module Api
     module Nic
       cmd_processor :add_ip_to_nic,

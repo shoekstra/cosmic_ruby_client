@@ -1,4 +1,4 @@
-module CloudstackRubyClient
+module CosmicRubyClient
   module Api
     module SecurityGroup
       cmd_processor :create_security_group,
