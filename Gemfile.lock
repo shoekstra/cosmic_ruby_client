@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cosmic_ruby_client (1.0.2)
+    cosmic_ruby_client (1.0.4)
 
 GEM
   remote: https://rubygems.org/
@@ -9,6 +9,10 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   cosmic_ruby_client!
+
+BUNDLED WITH
+   1.15.4

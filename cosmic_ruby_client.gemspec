@@ -10,7 +10,6 @@ Gem::Specification.new do |gem|
   gem.email         = ['ddegoede@schubergphilis.com']
   gem.description   = %q{A Ruby client for Cosmic's API, including a simple CLI.}
   gem.summary       = %q{A Ruby client for Cosmic's API.}
-  gem.homepage      = 'http://ddegoede.github.io/cosmic_ruby_client/'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
